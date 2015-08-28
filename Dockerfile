@@ -19,5 +19,5 @@ RUN chmod a+x /app/user/bin/run
 
 ONBUILD COPY . /app/user
 
-LABEL Procfile="web: /app/user/bin/run"
+LABEL HerokuDefaultProcfile="web: /app/user/bin/run"
 ENTRYPOINT /app/user/bin/run
