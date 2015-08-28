@@ -18,3 +18,6 @@ COPY run /app/user/bin/run
 RUN chmod a+x /app/user/bin/run
 
 ONBUILD COPY . /app/user
+
+LABEL Procfile="web: /app/user/bin/run"
+ENTRYPOINT /app/user/bin/run
