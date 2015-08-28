@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -ex
+
+sed -e "s/0.0.0.0/0.0.0.0:$PORT/" -i Caddyfile
+exec bin/caddy
